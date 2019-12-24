@@ -8,6 +8,15 @@ html, #app {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  border: none;
+  border-radius: 50px;
+  background-color: #57c1a6;
+  height: 40px;
+  color: white;
+  font-size: .9em;
+}
+
 .isActive {
   background-color: #efefef;
   border-radius: 15px;
@@ -47,6 +56,16 @@ html, #app {
     margin-top: -20px;
     color: white;
     font-size: .9em;
+  }
+}
+
+.property-details {
+  button {
+    min-width: 100px;
+
+    &.no-button {
+      background-color: #c9c8cc;
+    }
   }
 }
 
