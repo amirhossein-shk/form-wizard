@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import FormWizardPage from '../components/form-wizard/FormWizardPage'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'form-wizard',
+    component: FormWizardPage
   },
   {
     path: '/about',

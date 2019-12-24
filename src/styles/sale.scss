@@ -1,0 +1,73 @@
+@import '~bootstrap';
+@import '~bootstrap-vue';
+
+html, #app {
+  background-color: #f8fafa;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.isActive {
+  background-color: #efefef;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.form-content {
+  min-height: 650px;
+}
+
+.mortgage-type {
+
+  & > div {
+    padding: 0 30px;
+  }
+
+  .mortgage-card {
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 26px -15px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 1px 26px -15px rgba(0,0,0,0.76);
+    box-shadow: 1px 1px 26px -15px rgba(0,0,0,0.76);
+
+    img {
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+
+  button {
+    min-width: 50%;
+    border: none;
+    border-radius: 50px;
+    background-color: #57c1a6;
+    height: 40px;
+    margin-top: -20px;
+    color: white;
+    font-size: .9em;
+  }
+}
+
+.form-buttons {
+  border: none;
+  min-width: 150px;
+  border-radius: 50px;
+  color: black;
+  height: 40px;
+
+  &.next {
+    background-color: #fde76c;
+  }
+
+  &.back {
+    background-color: black;
+    color: white;
+    &.back-disabled {
+      background-color: #777777;
+      color: black;
+      opacity: .2;
+    }
+  }
+}
