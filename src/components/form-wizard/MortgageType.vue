@@ -4,15 +4,15 @@
     <p class="mt-5">What do you want to do?</p>
     <div class="row mortgage-type">
       <div class="col-md-3">
-        <div class="row mortgage-card text-center d-flex align-items-center justify-content-center">
+        <div class="row mortgage-card text-center d-flex align-items-center justify-content-center" :class="{selected: formInputs.toDo === 'Buy'}">
           <img src="https://image.flaticon.com/icons/png/512/2405/2405503.png"/>
         </div>
         <div class="row justify-content-center">
-          <button @click="setToDo('buy')">Buy</button>
+          <button @click="setToDo('Buy')">Buy</button>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="row mortgage-card text-center d-flex align-items-center justify-content-center">
+        <div class="row mortgage-card text-center d-flex align-items-center justify-content-center" :class="{selected: formInputs.toDo === 'Reflnance'}">
           <img src="https://image.flaticon.com/icons/png/512/2405/2405503.png"/>
         </div>
         <div class="row justify-content-center">
