@@ -57,7 +57,7 @@
                         isActive: false,
                         name: 'Payment details'
                     }
-                ]
+                ],
             }
         },
         methods: {
@@ -77,6 +77,7 @@
             },
             submit () {
                 alert('Form Submitted!')
+                console.log(this.$store.state.formInputs)
             }
         },
         mounted () {
