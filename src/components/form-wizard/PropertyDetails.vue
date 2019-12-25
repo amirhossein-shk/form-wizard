@@ -7,8 +7,8 @@
           <p class="mt-5">Are you first time homebuyer?</p>
         </div>
         <div class="col-md-12">
-          <button @click="setIsFirstTime(true)" class="mr-3">Yes</button>
-          <button @click="setIsFirstTime(false)" class="no-button">No</button>
+          <button @click="setIsFirstTime(true)" class="mr-3" :class="{'selected': formInputs.isFirstTime === true}">Yes</button>
+          <button @click="setIsFirstTime(false)" :class="{'selected': formInputs.isFirstTime === false}">No</button>
         </div>
         <div class="col-md-12 mt-5">
           <p>When do you plan to purchase your home?</p>
@@ -28,19 +28,21 @@
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Home')"
-                   :class="{'text-danger': (formInputs.whatType === 'Home')}">
+                   :class="{'selected': (formInputs.whatType === 'Home')}">
                 <div>
                   <font-awesome-icon icon="home" size="2x" />
                 </div>
                 <div class="mt-2">Home</div>
               </div>
-              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Condominium')">
+              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Condominium')"
+                   :class="{'selected': (formInputs.whatType === 'Condominium')}">
                 <div>
                   <font-awesome-icon icon="building" size="2x" />
                 </div>
                 <div class="mt-2">Condominium</div>
               </div>
-              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Townhouse')">
+              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Townhouse')"
+                   :class="{'selected': (formInputs.whatType === 'Townhouse')}">
                 <div>
                   <font-awesome-icon icon="city" size="2x" />
                 </div>
@@ -48,19 +50,22 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Multi-family')">
+              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Multi-family')"
+                   :class="{'selected': (formInputs.whatType === 'Multi-family')}">
                 <div>
                   <font-awesome-icon icon="hotel" size="2x" />
                 </div>
                 <div class="mt-2">Multi-family</div>
               </div>
-              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Land')">
+              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('Land')"
+                   :class="{'selected': (formInputs.whatType === 'Land')}">
                 <div>
                   <font-awesome-icon icon="tree" size="2x" />
                 </div>
                 <div class="mt-2">Land</div>
               </div>
-              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('New construction')">
+              <div class="col-md-4 col-lg-3 col-xl-2 icon-holder" role="button" @click="setWhatType('New construction')"
+                   :class="{'selected': (formInputs.whatType === 'New construction')}">
                 <div>
                   <font-awesome-icon icon="wrench" size="2x" />
                 </div>

@@ -149,9 +149,10 @@ button {
 .property-details {
   button {
     min-width: 100px;
+    background-color: #c9c8cc;
 
-    &.no-button {
-      background-color: #c9c8cc;
+    &.selected {
+      background-color: #57c1a6;
     }
   }
 
@@ -163,6 +164,11 @@ button {
       font-size: 12px;
       text-align: center;
       cursor: pointer;
+
+      &.selected {
+        border: 1px solid red;
+        color: red;
+      }
     }
   }
 }
